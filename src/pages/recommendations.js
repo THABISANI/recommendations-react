@@ -48,10 +48,8 @@ function Recommendations() {
         <div className="form-inner recommendation-list">
           {recommendations.map((recommendation, index) => (
                 <div className='image-container d-flex justify-content-center m-3 row' key={index}>
-                  <div className="recommendation-image"><img className="recommendation-image" src={require('../images/food_image.jpeg')} alt='logo' /></div>
-                  <div>
-                      <span ><br/><strong>Id: </strong>{recommendation.id}<br/><strong>Name</strong>: {recommendation.bna}</span>
-                  </div>
+                  <img className="recommendation-image" src={require('../images/food_image.jpeg')} alt='logo' />
+                  <span ><br/><strong>Id: </strong>{recommendation.id}<br/><strong>Name</strong>: {recommendation.bna}</span>
                 </div>
             ))}
       </div>

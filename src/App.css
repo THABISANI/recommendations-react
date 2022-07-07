@@ -131,3 +131,7 @@ form .form-inner input[type="submit"]:hover, form .form-inner button[type="butto
 .recommendation-image {
   border-radius: 10px;
 }
+
+.image-container {
+  margin-bottom: 20px;
+}
