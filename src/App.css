@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora&display=swap');
+
+* {
+  font-family: 'Sora', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+}
+
+input, button, .reset-button, .add-to-cart-button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+select {
+  border: none;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #53565A;
+  
+}
+
+form {
+  display: block;
+  position: relative;
+}
+
+form:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: 1;
+}
+
+form .form-inner {
+  position: relative;
+  display: block;
+  background-color: #FFF;
+  padding: 30px;
+  z-index: 2;
+}
+
+form .form-inner h2 {
+  color: #888;
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+form .form-inner .form-group {
+  display: block;
+  width: 300px;
+  margin-bottom: 15px;
+}
+
+.form-inner .form-group label {
+  display: block;
+  color: #666;
+  font-size: 12px;
+  transition: 0.4s;
+  margin-bottom: 5px;
+}
+
+.form-inner .form-group:focus-within label {
+  color: #737170 ;
+}
+
+.form-inner .form-group input, .form-inner .form-group select, .form-inner .form-group textarea, .form-inner .form-group img, .reset-button, .add-to-cart-button {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #F8F8F8;
+  border-radius: 8px;;
+  transition: 0.4s;
+}
+
+form .form-inner .form-group input:focus, form .form-inner .form-group button:focus, .reset-button:focus, .add-to-cart-button:focus, select:focus{
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);
+}
+
+form .form-inner input[type="submit"], form .form-inner button[type="button"], .reset-button, .add-to-cart-button{
+  display: block;
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-image: linear-gradient(to right, #353434 50%, #353434 50%, #CCC9C7 );
+  background-position: 0%;
+  background-size: 200%;
+  transition: 0.4s;
+  color: #FFF;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+form .form-inner input[type="submit"]:hover, form .form-inner button[type="button"]:hover, .reset-button:hover, .add-to-cart-button:hover {
+  background-position: 100% 0%;
+}
+
+.form-inner .form-group button {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding-left: 2px;;
+  padding: 10px 15px;
+  background-color: #F8F8F8;
+  border-radius: 8px;;
+  transition: 0.4s;
+}
+.recommendation-list {
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.recommendation-image {
+  border-radius: 10px;
+}
